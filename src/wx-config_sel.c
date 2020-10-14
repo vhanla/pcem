@@ -130,7 +130,7 @@ static int config_selection_dlgproc(void* hdlg, int message, INT_PARAM wParam, L
 
                                 while (!done)
                                 {
-                                        if (wx_textentrydialog(hdlg, "Enter name:", "New config", name, 1, 64, (LONG_PARAM)name))
+                                        if (wx_textentrydialog(hdlg, "Ingrese nombre:", "Nueva configuracion", name, 1, 64, (LONG_PARAM)name))
                                         {
                                                 char cfg[512];
 
@@ -153,7 +153,7 @@ static int config_selection_dlgproc(void* hdlg, int message, INT_PARAM wParam, L
                                                         done = 1;
                                                 }
                                                 else
-                                                        wx_simple_messagebox("Already exists", "A configuration with that name already exists.");
+                                                        wx_simple_messagebox("Ya existe", "Una configuracion con el mismo nombre ya existe.");
                                         }
                                         else
                                                 done = 1;
@@ -201,7 +201,7 @@ static int config_selection_dlgproc(void* hdlg, int message, INT_PARAM wParam, L
 
                                         while (!done)
                                         {
-                                                if (wx_textentrydialog(hdlg, "Enter name:", "New name", name, 1, 64, (LONG_PARAM)name))
+                                                if (wx_textentrydialog(hdlg, "Nuevo nombre:", "Cambiar nombre", name, 1, 64, (LONG_PARAM)name))
                                                 {
                                                         char old_path[512];
                                                         char new_path[512];
@@ -226,7 +226,7 @@ static int config_selection_dlgproc(void* hdlg, int message, INT_PARAM wParam, L
                                                                 done = 1;
                                                         }
                                                         else
-                                                                wx_simple_messagebox("Already exists", "A configuration with that name already exists.");
+                                                                wx_simple_messagebox("Ya existe", "Una configuracion con ese nombre ya existe.");
                                                 }
                                                 else
                                                         done = 1;
@@ -251,7 +251,7 @@ static int config_selection_dlgproc(void* hdlg, int message, INT_PARAM wParam, L
 
                                         while (!done)
                                         {
-                                                if (wx_textentrydialog(hdlg, "Enter name:", "New name", name, 1, 64, (LONG_PARAM)name))
+                                                if (wx_textentrydialog(hdlg, "Ingrese nombre:", "Copiar configuracion", name, 1, 64, (LONG_PARAM)name))
                                                 {
                                                         char old_path[512];
                                                         char new_path[512];
@@ -276,7 +276,7 @@ static int config_selection_dlgproc(void* hdlg, int message, INT_PARAM wParam, L
                                                                 done = 1;
                                                         }
                                                         else
-                                                                wx_simple_messagebox("Already exists", "A configuration with that name already exists.");
+                                                                wx_simple_messagebox("Ya existe", "Una configuracion con ese nombre ya existe.");
                                                 }
                                                 else
                                                         done = 1;
@@ -296,7 +296,7 @@ static int config_selection_dlgproc(void* hdlg, int message, INT_PARAM wParam, L
                                 {
                                         char s[512];
                                         wx_sendmessage(h, WX_LB_GETTEXT, c, (LONG_PARAM)name);
-                                        sprintf(s, "Do you want to delete \"%s\"?", name);
+                                        sprintf(s, "Esta seguro de eliminar \"%s\"?", name);
                                         if (wx_messagebox(NULL, s, "PCem", WX_MB_OKCANCEL) == WX_IDOK)
                                         {
                                                 strcpy(s, configs_path);

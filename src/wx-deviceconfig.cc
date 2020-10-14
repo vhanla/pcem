@@ -235,7 +235,7 @@ void deviceconfig_open(void* hwnd, device_t *device)
 
         device_config_t *config = device->config;
 
-        dialog.SetTitle("Device Configuration");
+        dialog.SetTitle(wxString::FromUTF8("Configuración de Dispositivo"));
 
         wxFlexGridSizer* root = new wxFlexGridSizer(0, 1, 0, 0);
         root->SetFlexibleDirection(wxBOTH);

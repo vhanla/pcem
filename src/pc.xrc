@@ -8,19 +8,19 @@
 		<style>wxTB_FLAT|wxTB_NODIVIDER</style>
 		<object class="tool" name="TOOLBAR_RUN">
        		<bitmap>icons/24x24/play.png</bitmap>
-        	<label>Run</label>
+				/<label>Ejecutar</label>
        	</object>
 		<object class="tool" name="TOOLBAR_PAUSE">
        		<bitmap>icons/24x24/pause.png</bitmap>
-        	<label>Pause</label>
+        	<label>Pausa</label>
        	</object>
 		<object class="tool" name="TOOLBAR_STOP">
        		<bitmap>icons/24x24/stop.png</bitmap>
-        	<label>Stop</label>
+        	<label>Detener</label>
        	</object>
 		<object class="tool" name="TOOLBAR_RESET">
        		<bitmap>icons/24x24/refresh.png</bitmap>
-        	<label>Hard reset</label>
+        	<label>Reinicio completo</label>
        	</object>
     </object>
 	<ids-range name="IDM_SCREENSHOT_FORMAT" start="950" />
@@ -37,162 +37,162 @@
 	<ids-range name="IDM_VID_GL3_SHADER_REFRESH_RATE" start="3200" />
 	<object class="wxMenuBar" name="status_menu">
 		<object class="wxMenu">
-			<label>_Options</label>
+			<label>_Opciones</label>
 			<object class="wxMenuItem" name="IDM_DISC_ACTIVITY">
-				<label>Disc activity</label>
+				<label>Actividad de discos</label>
 				<checkable>1</checkable>
 			</object>
 			<object class="wxMenuItem" name="IDM_MACHINE_MOUNT_PATHS">
-				<label>Mount paths</label>
+				<label>Montar ubicaciones</label>
 				<checkable>1</checkable>
 			</object>
 			<object class="wxMenuItem" name="IDM_SHOW_STATUS">
-				<label>Status</label>
+				<label>Estado</label>
 				<checkable>1</checkable>
 			</object>
 			<object class="wxMenuItem" name="IDM_SPEED_HISTORY">
-				<label>Speed history</label>
+				<label>Historial de velocidad</label>
 				<checkable>1</checkable>
 			</object>
 			<object class="separator"/>
 			<object class="wxMenuItem" name="IDM_SHOW_MACHINE_ON_START">
-				<label>Show on start</label>
+				<label>Mostrar al iniciar</label>
 				<checkable>1</checkable>
 			</object>
 		</object>
 		<object class ="wxMenu">
-			<label>_Configure</label>
+			<label>_Configurar</label>
 			<object class="wxMenuItem" name="IDM_CONFIG">
-				<label>Machine</label>
+				<label>Equipo</label>
 			</object>
 		</object>
 		<object class ="wxMenu">
 			<label>_Misc</label>
 			<object class="wxMenuItem" name="IDM_RESET_CONFIRMATION_DIALOGS">
-				<label>_Reset confirmation dialogs</label>
+				<label>_Reiniciar diálogos de confirmación</label>
 			</object>
 			<object class="separator"/>
 			<object class="wxMenuItem" name="IDM_ABOUT">
-				<label>_About</label>
+				<label>_Acerca</label>
 			</object>
 		</object>
 	</object>
 	<object class="wxMenu" name="main_menu">
 		<object class="wxMenu">
-			<label>_System</label>
+			<label>_Sistema</label>
 			<object class="wxMenuItem" name="IDM_FILE_HRESET">
-				<label>_Hard Reset</label>
+				<label>_Reinicio Completo</label>
 			</object>
 			<object class="wxMenuItem" name="IDM_FILE_RESET_CAD">
-				<label>_Ctrl+Alt+Del</label>
+				<label>_Ctrl+Alt+Supr\tCtrl+Alt+R</label>
 			</object>
 			<object class="separator"/>
 			<object class="wxMenuItem" name="IDM_FILE_EXIT">
-				<label>_Shutdown</label>
+				<label>_Apagar</label>
 			</object>
 		</object>
 		<object class="wxMenu">
-			<label>_Disc</label>
+			<label>_Discos</label>
 			<object class="wxMenuItem" name="IDM_DISC_A">
-				<label>Change drive _A:...</label>
+				<label>Modificar unidad _A:...</label>
 			</object>
 			<object class="wxMenuItem" name="IDM_DISC_B">
-				<label>Change drive _B:...</label>
+				<label>Modificar unidad _B:...</label>
 			</object>
 			<object class="wxMenuItem" name="IDM_EJECT_A">
-				<label>_Eject drive A:</label>
+				<label>_Expulsar unidad A:</label>
 			</object>
 			<object class="wxMenuItem" name="IDM_EJECT_B">
-				<label>Eject drive B:</label>
+				<label>Expulsar unidad B:</label>
 			</object>
 			<object class="separator"/>
 			<object class="wxMenuItem" name="IDM_BPB_DISABLE">
-				<label>Disable BPB checking</label>
+				<label>Deshabilitar comprobación BPB</label>
 				<checkable>1</checkable>
 			</object>
 			<object class="separator"/>
 			<object class="wxMenuItem" name="IDM_DISC_CREATE">
-				<label>Create blank disc image...</label>
+				<label>Crear imagen de disco vacío...</label>
 			</object>
 			<object class="separator"/>
 			<object class="wxMenuItem" name="IDM_DISC_ZIP">
-				<label>Load _ZIP drive...</label>
+				<label>Cargar unidad _ZIP...</label>
 			</object>
 			<object class="wxMenuItem" name="IDM_EJECT_ZIP">
-				<label>Eject ZIP drive</label>
+				<label>Expulsara unidad ZIP</label>
 			</object>
 		</object>
 		<object class="wxMenu" name="IDM_CDROM">
 			<label>_CD-ROM</label>
 			<object class="wxMenuItem" name="IDM_CDROM_IMAGE_LOAD">
-				<label>_Load image...</label>
+				<label>_Cargar imagen...</label>
 			</object>
 			<object class="separator"/>
 			<object class="wxMenuItem" name="IDM_CDROM_EMPTY">
-				<label>_Empty</label>
+				<label>_Expulsar</label>
 				<radio>1</radio>
 			</object>
 			<object class="wxMenuItem" name="IDM_CDROM_IMAGE">
-				<label>_Image...</label>
+				<label>_Imagen...</label>
 				<radio>1</radio>
 			</object>
 		</object>
 		<object class="wxMenu" name="IDM_CASSETTE">
 			<label>C_assette</label>
 			<object class="wxMenuItem" name="IDM_CASSETTE_LOAD">
-				<label>_Load tapefile...</label>
+				<label>_Cargar cinta...</label>
 			</object>
 			<object class="wxMenuItem" name="IDM_CASSETTE_EJECT">
-				<label>_Eject tape</label>
+				<label>_Expulsar cinta</label>
 			</object>
 		</object>
 		<object class="wxMenu">
-			<label>Video</label>
+			<label>Vídeo</label>
 			<object class="wxMenu">
-				<label>Resolution</label>
+				<label>Resolución</label>
 				<object class="wxMenuItem" name="IDM_VID_RESOLUTION[0]">
 					<label>Original</label>
 					<radio>1</radio>
 				</object>
 				<object class="wxMenuItem" name="IDM_VID_RESOLUTION[1]">
-					<label>Resizable</label>
+					<label>Redimensionable</label>
 					<radio>1</radio>
 				</object>
 				<object class="wxMenuItem" name="IDM_VID_RESOLUTION[2]">
-					<label>Custom</label>
+					<label>Personalizado</label>
 					<radio>1</radio>
 				</object>
 				<object class="separator"/>
 				<object class="wxMenuItem" name="IDM_VID_RESOLUTION_CUSTOM">
-					<label>Set custom resolution...</label>
+					<label>Ajustar resolución personalizada...</label>
 				</object>
 			</object>
 			<object class="wxMenuItem" name="IDM_VID_REMEMBER">
-				<label>Remember size &amp;&amp; position</label>
+				<label>Recordar tamaño &amp;&amp; posición</label>
 				<checkable>1</checkable>
 			</object>
 			<object class="separator" />
 			<object class="wxMenuItem" name="IDM_VID_FULLSCREEN_TOGGLE">
-				<label>Toggle fullscreen\tCtrl+Alt+PageDown</label>
+				<label>Pantalla completa\tCtrl+Alt+PageDown</label>
 			</object>
 			<object class="wxMenuItem" name="IDM_VID_FULLSCREEN">
-				<label>Fullscreen on input grab</label>
+				<label>Pantalla completa al interactuar</label>
 				<checkable>1</checkable>
 			</object>
 			<object class="separator"/>
 			<object class="wxMenu">
-				<label>Fullscreen mode</label>
+				<label>Modos de pantalla completa</label>
 				<object class="wxMenuItem" name="IDM_VID_FS_MODE[0]">
-					<label>_Borderless</label>
+					<label>_Ventan sin bordes</label>
 					<radio>1</radio>
 				</object>
 				<object class="wxMenuItem" name="IDM_VID_FS_MODE[1]">
-					<label>_Exclusive</label>
+					<label>Modos _Exclusivo</label>
 					<radio>1</radio>
 				</object>
 			</object>
 			<object class="wxMenu" name="IDM_VID_RENDER_DRIVER">
-				<label>_Render driver</label>
+				<label>Controlador de _Renderización</label>
 				<object class="wxMenuItem" name="IDM_VID_RENDER_DRIVER[0]">
 					<label>Auto</label>
 					<radio>1</radio>
@@ -215,20 +215,20 @@
 				</object>
 			</object>
 			<object class="wxMenuItem" name="IDM_VID_VSYNC">
-				<label>_VSync</label>
+				<label>Sincronización _Vertical</label>
 				<checkable>1</checkable>
 			</object>
 			<object class="wxMenuItem" name="IDM_VID_LOST_FOCUS_DIM">
-				<label>_Dim display on lost focus</label>
+				<label>_Oscurecer la pantalla al perder enfoque</label>
 				<checkable>1</checkable>
 			</object>
 			<object class="wxMenuItem" name="IDM_VID_ALTERNATIVE_UPDATE_LOCK">
-				<label>Alternative update-lock</label>
+				<label>Actualización-bloqueada alternativa</label>
 				<checkable>1</checkable>
 			</object>
 			<object class="separator"/>
 			<object class="wxMenu">
-				<label>Scale filtering</label>
+				<label>Filtro de redimensionado</label>
 				<object class="wxMenuItem" name="IDM_VID_SCALE_MODE[0]">
 					<label>_Nearest</label>
 					<radio>1</radio>
@@ -239,9 +239,9 @@
 				</object>
 			</object>
 			<object class="wxMenu">
-				<label>Output stretch-mode</label>
+				<label>Modo de salida ajustado</label>
 				<object class="wxMenuItem" name="IDM_VID_FS[0]">
-					<label>_None</label>
+					<label>_Ninguno</label>
 					<radio>1</radio>
 				</object>
 				<object class="wxMenuItem" name="IDM_VID_FS[1]">
@@ -249,16 +249,16 @@
 					<radio>1</radio>
 				</object>
 				<object class="wxMenuItem" name="IDM_VID_FS[2]">
-					<label>_Square pixels</label>
+					<label>Píxeles _Cuadrados</label>
 					<radio>1</radio>
 				</object>
 				<object class="wxMenuItem" name="IDM_VID_FS[3]">
-					<label>_Integer scale</label>
+					<label>Escala de _enteros</label>
 					<radio>1</radio>
 				</object>
 			</object>
 			<object class="wxMenu" name="IDM_VID_SCALE_MENU">
-				<label>Output scale</label>
+				<label>Escala de Salida</label>
 				<object class="wxMenuItem" name="IDM_VID_SCALE[0]">
 					<label>0.5x</label>
 					<radio>1</radio>
@@ -294,11 +294,11 @@
 			</object>
 			<object class="separator"/>
 			<object class="wxMenu" name="IDM_VID_GL3">
-				<label>OpenGL 3.0 renderer</label>
+				<label>Renderizado OpenGL 3.0</label>
 				<object class="wxMenu">
-					<label>Input stretch-mode</label>
+					<label>Modo-ajustado de entrada</label>
 					<object class="wxMenuItem" name="IDM_VID_GL3_INPUT_STRETCH[0]">
-						<label>_None</label>
+						<label>_Ninguno</label>
 						<radio>1</radio>
 					</object>
 					<object class="wxMenuItem" name="IDM_VID_GL3_INPUT_STRETCH[1]">
@@ -306,16 +306,16 @@
 						<radio>1</radio>
 					</object>
 					<object class="wxMenuItem" name="IDM_VID_GL3_INPUT_STRETCH[2]">
-						<label>_Square pixels</label>
+						<label>Píxeles _Cuadrados</label>
 						<radio>1</radio>
 					</object>
 					<object class="wxMenuItem" name="IDM_VID_GL3_INPUT_STRETCH[3]">
-						<label>_Integer scale</label>
+						<label>Escala de _enteros</label>
 						<radio>1</radio>
 					</object>
 				</object>
 				<object class="wxMenu">
-					<label>Input scale</label>
+					<label>Escala de Entrada</label>
 					<object class="wxMenuItem" name="IDM_VID_GL3_INPUT_SCALE[0]">
 						<label>0.5x</label>
 						<radio>1</radio>
@@ -350,9 +350,9 @@
 					</object>
 				</object>
 				<object class="wxMenu">
-					<label>Shader refresh rate</label>
+					<label>Frecuencia de actualización del shader</label>
 					<object class="wxMenuItem" name="IDM_VID_GL3_SHADER_REFRESH_RATE[0]">
-						<label>Same as emulated display</label>
+						<label>La misma que la pantalla emulada</label>
 						<radio>1</radio>
 					</object>
 					<object class="wxMenuItem" name="IDM_VID_GL3_SHADER_REFRESH_RATE[10]">
@@ -386,14 +386,14 @@
 				</object>
 				<object class="separator"/>
 				<object class="wxMenuItem" name="IDM_VID_GL3_SHADER_MANAGER">
-					<label>Shader manager</label>
+					<label>Administrador de Shader</label>
 				</object>
 			</object>
 		</object>
 		<object class="wxMenu">
-			<label>Sound</label>
+			<label>Sonido</label>
 			<object class="wxMenu">
-				<label>_Buffer length</label>
+				<label>Duración del _Buffer</label>
 				<object class="wxMenuItem" name="IDM_SND_BUF[0]">
 					<label>_50 ms</label>
 					<radio>1</radio>
@@ -412,7 +412,7 @@
 				</object>
 			</object>
 			<object class="wxMenu">
-				<label>_Output level</label>
+				<label>Nivel de _Salida</label>
 				<object class="wxMenuItem" name="IDM_SND_GAIN[0]">
 					<label>_Normal</label>
 					<radio>1</radio>
@@ -458,12 +458,12 @@
 		<object class="wxMenu">
 			<label>Misc</label>
 			<object class="wxMenu">
-				<label>_Screenshot</label>
+				<label>Capturar _Pantalla</label>
 				<object class="wxMenuItem" name="IDM_SCREENSHOT">
-					<label>_Take screenshot\tCtrl+Alt+PageUp</label>
+					<label>_Capturar a archivo de imagen\tCtrl+Alt+PageUp</label>
 				</object>
 				<object class="wxMenu">
-					<label>_Format</label>
+					<label>_Formato</label>
 					<object class="wxMenuItem" name="IDM_SCREENSHOT_FORMAT[0]">
 						<label>PNG</label>
 						<radio>1</radio>
@@ -482,12 +482,12 @@
 					</object>
 				</object>
 				<object class="wxMenuItem" name="IDM_SCREENSHOT_FLASH">
-					<label>Flash screen</label>
+					<label>Flash a pantalla</label>
 					<checkable>1</checkable>
 				</object>
 			</object>
 			<object class="wxMenuItem" name="IDM_STATUS">
-				<label>_Machine</label>
+				<label>_Equipo</label>
 			</object>
 		</object>
 	</object>
@@ -506,7 +506,7 @@
 
 	<object class="wxDialog" name="ConfigureDlg">
 		<style>wxDEFAULT_DIALOG_STYLE</style>
-		<title>Configure PCem</title>
+		<title>Configurar PCem</title>
 		<centered>1</centered>
 		<object class="wxPanel" name="ROOT_PANEL">
 		<object class="wxFlexGridSizer">
@@ -540,7 +540,7 @@
 									<border>5</border>
 									<object class="wxStaticText">
 										<size>80,-1</size>
-										<label>Machine:</label>
+										<label>Equipo:</label>
 										<wrap>-1</wrap>
 									</object>
 								</object>
@@ -667,7 +667,7 @@
 									<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 									<border>5</border>
 									<object class="wxCheckBox" name="IDC_CHECKDYNAREC">
-										<label>Dynamic recompiler</label>
+										<label>Recompilador dinámico</label>
 										<checked>0</checked>
 									</object>
 								</object>
@@ -683,7 +683,7 @@
 									<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 									<border>5</border>
 									<object class="wxStaticText">
-										<label>Memory:</label>
+										<label>Memoria:</label>
 										<wrap>-1</wrap>
 									</object>
 								</object>
@@ -726,7 +726,7 @@
 									<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 									<border>5</border>
 									<object class="wxStaticText">
-										<label>Waitstates:</label>
+										<label>Tiempos de espera:</label>
 										<wrap>-1</wrap>
 									</object>
 								</object>
@@ -766,7 +766,7 @@
 									<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 									<border>5</border>
 									<object class="wxCheckBox" name="IDC_CHECKSYNC">
-										<label>Synchronize time to host clock</label>
+										<label>Sincronizar reloj con el anfitrión</label>
 										<checked>0</checked>
 									</object>
 								</object>
@@ -797,7 +797,7 @@
 									<border>5</border>
 									<object class="wxStaticText">
 										<size>80,-1</size>
-										<label>Device:</label>
+										<label>Dispositivo:</label>
 										<wrap>-1</wrap>
 									</object>
 								</object>
@@ -835,7 +835,7 @@
 									<border>5</border>
 									<object class="wxStaticText">
 										<size>80,-1</size>
-										<label>Speed:</label>
+										<label>Velocidad:</label>
 										<wrap>-1</wrap>
 									</object>
 								</object>
@@ -908,7 +908,7 @@
 									<border>5</border>
 									<object class="wxStaticText">
 										<size>80,-1</size>
-										<label>Device:</label>
+										<label>Dispositivo:</label>
 										<wrap>-1</wrap>
 									</object>
 								</object>
@@ -1010,7 +1010,7 @@
 									<border>5</border>
 									<object class="wxStaticText">
 										<size>80,-1</size>
-										<label>LPT Device:</label>
+										<label>Dispositivo LPT:</label>
 										<wrap>-1</wrap>
 									</object>
 								</object>
@@ -1181,7 +1181,7 @@
 											<border>5</border>
 											<object class="wxStaticText">
 												<size>80,-1</size>
-												<label>CD Model:</label>
+												<label>Modelo de CD:</label>
 												<wrap>-1</wrap>
 											</object>
 										</object>
@@ -1216,7 +1216,7 @@
 											<border>5</border>
 											<object class="wxStaticText">
 												<size>80,-1</size>
-												<label>CD Speed:</label>
+												<label>Velocidad de CD:</label>
 												<wrap>-1</wrap>
 											</object>
 										</object>
@@ -1284,7 +1284,7 @@
 									<border>5</border>
 									<object class="wxStaticText">
 										<size>80,-1</size>
-										<label>Mouse:</label>
+										<label>Ratón:</label>
 										<wrap>-1</wrap>
 									</object>
 								</object>
@@ -1425,7 +1425,7 @@
 									<border>5</border>
 									<object class="wxStaticText" name="m_staticText70">
 										<size>80,-1</size>
-										<label>Network card :</label>
+										<label>Tarjeta de Red :</label>
 										<wrap>-1</wrap>
 									</object>
 								</object>
@@ -1480,7 +1480,7 @@
 						<flag>wxALL</flag>
 						<border>5</border>
 						<object class="wxButton" name="wxID_OK">
-							<label>OK</label>
+							<label>Aceptar</label>
 							<default>1</default>
 						</object>
 					</object>
@@ -1489,7 +1489,7 @@
 						<flag>wxALL</flag>
 						<border>5</border>
 						<object class="wxButton" name="wxID_CANCEL">
-							<label>Cancel</label>
+							<label>Cancelar</label>
 							<default>0</default>
 						</object>
 					</object>
@@ -1513,7 +1513,7 @@
 					<border>5</border>
 					<object class="wxStaticText" name="IDC_HDD_LABEL[0]">
 						<size>75,-1</size>
-						<label>Type:</label>
+						<label>Tipo:</label>
 						<wrap>-1</wrap>
 					</object>
 				</object>
@@ -1545,7 +1545,7 @@
 							<flag>wxALL</flag>
 							<border>5</border>
 							<object class="wxBitmapButton" name="IDC_NEW[0]">
-								<tooltip>New</tooltip>
+								<tooltip>Nuevo</tooltip>
 								<bitmap>icons/16x16/drive_add.png</bitmap>
 								<default>0</default>
 							</object>
@@ -1557,7 +1557,7 @@
 					<flag>wxALL</flag>
 					<border>5</border>
 					<object class="wxBitmapButton" name="IDC_FILE[0]">
-						<tooltip>Browse</tooltip>
+						<tooltip>Buscar</tooltip>
 						<bitmap>icons/16x16/folder.png</bitmap>
 						<default>0</default>
 					</object>
@@ -1567,7 +1567,7 @@
 					<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 					<border>5</border>
 					<object class="wxStaticText" name="IDC_HDD_LABEL[1]">
-						<label>File:</label>
+						<label>Archivo:</label>
 						<wrap>-1</wrap>
 					</object>
 				</object>
@@ -1587,7 +1587,7 @@
 					<border>5</border>
 					<object class="wxBitmapButton" name="IDC_EJECT[0]">
 						<bitmap>icons/16x16/control_eject.png</bitmap>
-						<tooltip>Eject</tooltip>
+						<tooltip>Expulsar</tooltip>
 						<default>0</default>
 					</object>
 				</object>
@@ -1613,7 +1613,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[2]">
-								<label>Sectors:</label>
+								<label>Sectores:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -1630,7 +1630,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[3]">
-								<label>Heads:</label>
+								<label>Cabezales:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -1647,7 +1647,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[4]">
-								<label>Cylinder:</label>
+								<label>Cilindros:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -1664,7 +1664,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[5]">
-								<label>Size:</label>
+								<label>Tamaño:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -1701,7 +1701,7 @@
 					<border>5</border>
 					<object class="wxStaticText" name="IDC_HDD_LABEL[10]">
 						<size>75,-1</size>
-						<label>Type:</label>
+						<label>Tipo:</label>
 						<wrap>-1</wrap>
 					</object>
 				</object>
@@ -1733,7 +1733,7 @@
 							<flag>wxALL</flag>
 							<border>5</border>
 							<object class="wxBitmapButton" name="IDC_NEW[1]">
-								<tooltip>New</tooltip>
+								<tooltip>Nuevo</tooltip>
 								<bitmap>icons/16x16/drive_add.png</bitmap>
 								<default>0</default>
 							</object>
@@ -1745,7 +1745,7 @@
 					<flag>wxALL</flag>
 					<border>5</border>
 					<object class="wxBitmapButton" name="IDC_FILE[1]">
-						<tooltip>Browse</tooltip>
+						<tooltip>Buscar</tooltip>
 						<bitmap>icons/16x16/folder.png</bitmap>
 						<default>0</default>
 					</object>
@@ -1755,7 +1755,7 @@
 					<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 					<border>5</border>
 					<object class="wxStaticText" name="IDC_HDD_LABEL[11]">
-						<label>File:</label>
+						<label>Archivo:</label>
 						<wrap>-1</wrap>
 					</object>
 				</object>
@@ -1775,7 +1775,7 @@
 					<border>5</border>
 					<object class="wxBitmapButton" name="IDC_EJECT[1]">
 						<bitmap>icons/16x16/control_eject.png</bitmap>
-						<tooltip>Eject</tooltip>
+						<tooltip>Expulsar</tooltip>
 						<default>0</default>
 					</object>
 				</object>
@@ -1801,7 +1801,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[12]">
-								<label>Sectors:</label>
+								<label>Sectores:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -1818,7 +1818,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[13]">
-								<label>Heads:</label>
+								<label>Cabezales:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -1835,7 +1835,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[14]">
-								<label>Cylinder:</label>
+								<label>Cilindros:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -1852,7 +1852,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[15]">
-								<label>Size:</label>
+								<label>Tamaño:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -1889,7 +1889,7 @@
 					<border>5</border>
 					<object class="wxStaticText" name="IDC_HDD_LABEL[20]">
 						<size>75,-1</size>
-						<label>Type:</label>
+						<label>Tipo:</label>
 						<wrap>-1</wrap>
 					</object>
 				</object>
@@ -1921,7 +1921,7 @@
 							<flag>wxALL</flag>
 							<border>5</border>
 							<object class="wxBitmapButton" name="IDC_NEW[2]">
-								<tooltip>New</tooltip>
+								<tooltip>Nuevo</tooltip>
 								<bitmap>icons/16x16/drive_add.png</bitmap>
 								<default>0</default>
 							</object>
@@ -1933,7 +1933,7 @@
 					<flag>wxALL</flag>
 					<border>5</border>
 					<object class="wxBitmapButton" name="IDC_FILE[2]">
-						<tooltip>Browse</tooltip>
+						<tooltip>Buscar</tooltip>
 						<bitmap>icons/16x16/folder.png</bitmap>
 						<default>0</default>
 					</object>
@@ -1943,7 +1943,7 @@
 					<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 					<border>5</border>
 					<object class="wxStaticText" name="IDC_HDD_LABEL[21]">
-						<label>File:</label>
+						<label>Archivo:</label>
 						<wrap>-1</wrap>
 					</object>
 				</object>
@@ -1963,7 +1963,7 @@
 					<border>5</border>
 					<object class="wxBitmapButton" name="IDC_EJECT[2]">
 						<bitmap>icons/16x16/control_eject.png</bitmap>
-						<tooltip>Eject</tooltip>
+						<tooltip>Expulsar</tooltip>
 						<default>0</default>
 					</object>
 				</object>
@@ -1989,7 +1989,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[22]">
-								<label>Sectors:</label>
+								<label>Sectores:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -2006,7 +2006,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[23]">
-								<label>Heads:</label>
+								<label>Cabezales:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -2023,7 +2023,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[24]">
-								<label>Cylinder:</label>
+								<label>Cilindros:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -2040,7 +2040,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[25]">
-								<label>Size:</label>
+								<label>Tamaño:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -2077,7 +2077,7 @@
 					<border>5</border>
 					<object class="wxStaticText" name="IDC_HDD_LABEL[30]">
 						<size>75,-1</size>
-						<label>Type:</label>
+						<label>Tipo:</label>
 						<wrap>-1</wrap>
 					</object>
 				</object>
@@ -2109,7 +2109,7 @@
 							<flag>wxALL</flag>
 							<border>5</border>
 							<object class="wxBitmapButton" name="IDC_NEW[3]">
-								<tooltip>New</tooltip>
+								<tooltip>Nuevo</tooltip>
 								<bitmap>icons/16x16/drive_add.png</bitmap>
 								<default>0</default>
 							</object>
@@ -2121,7 +2121,7 @@
 					<flag>wxALL</flag>
 					<border>5</border>
 					<object class="wxBitmapButton" name="IDC_FILE[3]">
-						<tooltip>Browse</tooltip>
+						<tooltip>Buscar</tooltip>
 						<bitmap>icons/16x16/folder.png</bitmap>
 						<default>0</default>
 					</object>
@@ -2131,7 +2131,7 @@
 					<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 					<border>5</border>
 					<object class="wxStaticText" name="IDC_HDD_LABEL[31]">
-						<label>File:</label>
+						<label>Archivo:</label>
 						<wrap>-1</wrap>
 					</object>
 				</object>
@@ -2151,7 +2151,7 @@
 					<border>5</border>
 					<object class="wxBitmapButton" name="IDC_EJECT[3]">
 						<bitmap>icons/16x16/control_eject.png</bitmap>
-						<tooltip>Eject</tooltip>
+						<tooltip>Expulsar</tooltip>
 						<default>0</default>
 					</object>
 				</object>
@@ -2177,7 +2177,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[32]">
-								<label>Sectors:</label>
+								<label>Sectores:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -2194,7 +2194,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[33]">
-								<label>Heads:</label>
+								<label>Cabezales:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -2211,7 +2211,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[34]">
-								<label>Cylinder:</label>
+								<label>Cilindros:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -2228,7 +2228,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[35]">
-								<label>Size:</label>
+								<label>Tamaño:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -2265,7 +2265,7 @@
 					<border>5</border>
 					<object class="wxStaticText" name="IDC_HDD_LABEL[40]">
 						<size>75,-1</size>
-						<label>Type:</label>
+						<label>Tipo:</label>
 						<wrap>-1</wrap>
 					</object>
 				</object>
@@ -2297,7 +2297,7 @@
 							<flag>wxALL</flag>
 							<border>5</border>
 							<object class="wxBitmapButton" name="IDC_NEW[4]">
-								<tooltip>New</tooltip>
+								<tooltip>Nuevo</tooltip>
 								<bitmap>icons/16x16/drive_add.png</bitmap>
 								<default>0</default>
 							</object>
@@ -2309,7 +2309,7 @@
 					<flag>wxALL</flag>
 					<border>5</border>
 					<object class="wxBitmapButton" name="IDC_FILE[4]">
-						<tooltip>Browse</tooltip>
+						<tooltip>Buscar</tooltip>
 						<bitmap>icons/16x16/folder.png</bitmap>
 						<default>0</default>
 					</object>
@@ -2319,7 +2319,7 @@
 					<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 					<border>5</border>
 					<object class="wxStaticText" name="IDC_HDD_LABEL[41]">
-						<label>File:</label>
+						<label>Archivo:</label>
 						<wrap>-1</wrap>
 					</object>
 				</object>
@@ -2339,7 +2339,7 @@
 					<border>5</border>
 					<object class="wxBitmapButton" name="IDC_EJECT[4]">
 						<bitmap>icons/16x16/control_eject.png</bitmap>
-						<tooltip>Eject</tooltip>
+						<tooltip>Expulsar</tooltip>
 						<default>0</default>
 					</object>
 				</object>
@@ -2365,7 +2365,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[42]">
-								<label>Sectors:</label>
+								<label>Sectores:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -2382,7 +2382,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[43]">
-								<label>Heads:</label>
+								<label>Cabezales:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -2399,7 +2399,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[44]">
-								<label>Cylinder:</label>
+								<label>Cilindros:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -2416,7 +2416,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[45]">
-								<label>Size:</label>
+								<label>Tamaño:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -2453,7 +2453,7 @@
 					<border>5</border>
 					<object class="wxStaticText" name="IDC_HDD_LABEL[50]">
 						<size>75,-1</size>
-						<label>Type:</label>
+						<label>Tipo:</label>
 						<wrap>-1</wrap>
 					</object>
 				</object>
@@ -2485,7 +2485,7 @@
 							<flag>wxALL</flag>
 							<border>5</border>
 							<object class="wxBitmapButton" name="IDC_NEW[5]">
-								<tooltip>New</tooltip>
+								<tooltip>Nuevo</tooltip>
 								<bitmap>icons/16x16/drive_add.png</bitmap>
 								<default>0</default>
 							</object>
@@ -2497,7 +2497,7 @@
 					<flag>wxALL</flag>
 					<border>5</border>
 					<object class="wxBitmapButton" name="IDC_FILE[5]">
-						<tooltip>Browse</tooltip>
+						<tooltip>Buscar</tooltip>
 						<bitmap>icons/16x16/folder.png</bitmap>
 						<default>0</default>
 					</object>
@@ -2507,7 +2507,7 @@
 					<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 					<border>5</border>
 					<object class="wxStaticText" name="IDC_HDD_LABEL[51]">
-						<label>File:</label>
+						<label>Archivo:</label>
 						<wrap>-1</wrap>
 					</object>
 				</object>
@@ -2527,7 +2527,7 @@
 					<border>5</border>
 					<object class="wxBitmapButton" name="IDC_EJECT[5]">
 						<bitmap>icons/16x16/control_eject.png</bitmap>
-						<tooltip>Eject</tooltip>
+						<tooltip>Expulsar</tooltip>
 						<default>0</default>
 					</object>
 				</object>
@@ -2553,7 +2553,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[52]">
-								<label>Sectors:</label>
+								<label>Sectores:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -2570,7 +2570,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[53]">
-								<label>Heads:</label>
+								<label>Cabezales:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -2587,7 +2587,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[54]">
-								<label>Cylinder:</label>
+								<label>Cilindros:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -2604,7 +2604,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[55]">
-								<label>Size:</label>
+								<label>Tamaño:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -2641,7 +2641,7 @@
 					<border>5</border>
 					<object class="wxStaticText" name="IDC_HDD_LABEL[60]">
 						<size>75,-1</size>
-						<label>Type:</label>
+						<label>Tipo:</label>
 						<wrap>-1</wrap>
 					</object>
 				</object>
@@ -2673,7 +2673,7 @@
 							<flag>wxALL</flag>
 							<border>5</border>
 							<object class="wxBitmapButton" name="IDC_NEW[6]">
-								<tooltip>New</tooltip>
+								<tooltip>Nuevo</tooltip>
 								<bitmap>icons/16x16/drive_add.png</bitmap>
 								<default>0</default>
 							</object>
@@ -2685,7 +2685,7 @@
 					<flag>wxALL</flag>
 					<border>5</border>
 					<object class="wxBitmapButton" name="IDC_FILE[6]">
-						<tooltip>Browse</tooltip>
+						<tooltip>Buscar</tooltip>
 						<bitmap>icons/16x16/folder.png</bitmap>
 						<default>0</default>
 					</object>
@@ -2695,7 +2695,7 @@
 					<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 					<border>5</border>
 					<object class="wxStaticText" name="IDC_HDD_LABEL[61]">
-						<label>File:</label>
+						<label>Archivo:</label>
 						<wrap>-1</wrap>
 					</object>
 				</object>
@@ -2715,7 +2715,7 @@
 					<border>5</border>
 					<object class="wxBitmapButton" name="IDC_EJECT[6]">
 						<bitmap>icons/16x16/control_eject.png</bitmap>
-						<tooltip>Eject</tooltip>
+						<tooltip>Expulsar</tooltip>
 						<default>0</default>
 					</object>
 				</object>
@@ -2741,7 +2741,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[62]">
-								<label>Sectors:</label>
+								<label>Sectores:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -2758,7 +2758,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[63]">
-								<label>Heads:</label>
+								<label>Cabezales:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -2775,7 +2775,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[64]">
-								<label>Cylinder:</label>
+								<label>Cilindros:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -2792,7 +2792,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText" name="IDC_HDD_LABEL[65]">
-								<label>Size:</label>
+								<label>Tamaño:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -2817,7 +2817,7 @@
 	</object>
 	
 	<object class="wxDialog" name="HdNewDlg">
-		<title>New Hard Disc</title>
+		<title>Nuevo Disco Duro</title>
 		<centered>1</centered>
 		<object class="wxPanel" name="ROOT_PANEL">
 			<object class="wxFlexGridSizer">
@@ -2844,7 +2844,7 @@
 							<border>5</border>
 							<object class="wxStaticText">
 								<size>80,-1</size>
-								<label>File:</label>
+								<label>Archivo:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -2890,7 +2890,7 @@
 									<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
 									<border>5</border>
 									<object class="wxStaticText">
-										<label>Sectors:</label>
+										<label>Sectores:</label>
 										<wrap>-1</wrap>
 									</object>
 								</object>
@@ -2907,7 +2907,7 @@
 									<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
 									<border>5</border>
 									<object class="wxStaticText">
-										<label>Heads:</label>
+										<label>Cabezales:</label>
 										<wrap>-1</wrap>
 									</object>
 								</object>
@@ -2924,7 +2924,7 @@
 									<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
 									<border>5</border>
 									<object class="wxStaticText">
-										<label>Cylinders:</label>
+										<label>Cilindros:</label>
 										<wrap>-1</wrap>
 									</object>
 								</object>
@@ -2941,7 +2941,7 @@
 									<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
 									<border>5</border>
 									<object class="wxStaticText">
-										<label>Size (MB):</label>
+										<label>Tamaño (MB):</label>
 										<wrap>-1</wrap>
 									</object>
 								</object>
@@ -2966,7 +2966,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText">
-								<label>Type:</label>
+								<label>Tipo:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -3006,7 +3006,7 @@
 							<flag>wxALL</flag>
 							<border>5</border>
 							<object class="wxButton" name="wxID_OK">
-								<label>OK</label>
+								<label>Aceptar</label>
 								<default>1</default>
 							</object>
 						</object>
@@ -3015,7 +3015,7 @@
 							<flag>wxALL</flag>
 							<border>5</border>
 							<object class="wxButton" name="wxID_CANCEL">
-								<label>Cancel</label>
+								<label>Cancelar</label>
 								<default>0</default>
 							</object>
 						</object>
@@ -3026,7 +3026,7 @@
 	</object>
 
 	<object class="wxDialog" name="HdSizeDlg">
-		<title>Hard Disc Parameters</title>
+		<title>Parámetros de Disco Duro</title>
 		<centered>1</centered>
 		<object class="wxPanel" name="ROOT_PANEL">
 			<object class="wxFlexGridSizer">
@@ -3041,7 +3041,7 @@
 					<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 					<border>5</border>
 					<object class="wxStaticText">
-						<label>Initial settings are based on file size</label>
+						<label>Configuración inicial basada en tamaño del archivo</label>
 						<wrap>-1</wrap>
 					</object>
 				</object>
@@ -3078,7 +3078,7 @@
 									<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
 									<border>5</border>
 									<object class="wxStaticText">
-										<label>Sectors:</label>
+										<label>Sectores:</label>
 										<wrap>-1</wrap>
 									</object>
 								</object>
@@ -3095,7 +3095,7 @@
 									<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
 									<border>5</border>
 									<object class="wxStaticText">
-										<label>Heads:</label>
+										<label>Cabezales:</label>
 										<wrap>-1</wrap>
 									</object>
 								</object>
@@ -3112,7 +3112,7 @@
 									<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
 									<border>5</border>
 									<object class="wxStaticText">
-										<label>Cylinders:</label>
+										<label>Cilindros:</label>
 										<wrap>-1</wrap>
 									</object>
 								</object>
@@ -3129,7 +3129,7 @@
 									<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
 									<border>5</border>
 									<object class="wxStaticText">
-										<label>Size:</label>
+										<label>Tamaño:</label>
 										<wrap>-1</wrap>
 									</object>
 								</object>
@@ -3155,7 +3155,7 @@
 							<flag>wxALL | wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 							<object class="wxStaticText">
-								<label>Type:</label>
+								<label>Tipo:</label>
 								<wrap>-1</wrap>
 							</object>
 						</object>
@@ -3195,7 +3195,7 @@
 							<flag>wxALL</flag>
 							<border>5</border>
 							<object class="wxButton" name="wxID_OK">
-								<label>OK</label>
+								<label>Aceptar</label>
 								<default>1</default>
 							</object>
 						</object>
@@ -3204,7 +3204,7 @@
 							<flag>wxALL</flag>
 							<border>5</border>
 							<object class="wxButton" name="wxID_CANCEL">
-								<label>Cancel</label>
+								<label>Cancelar</label>
 								<default>0</default>
 							</object>
 						</object>
@@ -3215,7 +3215,7 @@
 	</object>
 
 	<object class="wxDialog" name="ConfigureSelectionDlg">
-		<title>PCem Configuration Manager</title>
+		<title>PCem Administrador de Configuraciones</title>
 		<centered>1</centered>
 		<object class="wxFlexGridSizer">
 			<rows>1</rows>
@@ -3265,7 +3265,7 @@
 								<border>5</border>
 								<object class="wxBitmapButton" name="wxID_OK">
 									<style>wxBU_AUTODRAW</style>
-									<tooltip>Load</tooltip>
+									<tooltip>Cargar</tooltip>
 									<bitmap>icons/32x32/control_play_blue.png</bitmap>
 									<default>1</default>
 								</object>
@@ -3276,7 +3276,7 @@
 								<border>5</border>
 								<object class="wxBitmapButton" name="IDC_CONFIG">
 									<style>wxBU_AUTODRAW</style>
-									<tooltip>Configure</tooltip>
+									<tooltip>Configurar</tooltip>
 									<bitmap>icons/32x32/setting_tools.png</bitmap>
 									<default>0</default>
 								</object>
@@ -3293,7 +3293,7 @@
         							<border>5</border>
         							<object class="wxBitmapButton" name="IDC_CONFIG_HOST">
         								<style>wxBU_AUTODRAW</style>
-               								<tooltip>Configure Host</tooltip>
+               								<tooltip>Configurar Host</tooltip>
         								<bitmap>icons/32x32/widescreen.png</bitmap>
         								<default>0</default>
         							</object>
@@ -3312,7 +3312,7 @@
 								<border>5</border>
 								<object class="wxBitmapButton" name="IDC_NEW">
 									<style>wxBU_AUTODRAW</style>
-									<tooltip>New</tooltip>
+									<tooltip>Nuevo</tooltip>
 									<bitmap>icons/32x32/computer_add.png</bitmap>
 									<default>0</default>
 								</object>
@@ -3323,7 +3323,7 @@
 								<border>5</border>
 								<object class="wxBitmapButton" name="IDC_RENAME">
 									<style>wxBU_AUTODRAW</style>
-									<tooltip>Rename</tooltip>
+									<tooltip>Renombrar</tooltip>
 									<bitmap>icons/32x32/computer_edit.png</bitmap>
 									<default>0</default>
 								</object>
@@ -3334,7 +3334,7 @@
 								<border>5</border>
 								<object class="wxBitmapButton" name="IDC_COPY">
 									<style>wxBU_AUTODRAW</style>
-									<tooltip>Copy</tooltip>
+									<tooltip>Copiar</tooltip>
 									<bitmap>icons/32x32/computer_go.png</bitmap>
 									<default>0</default>
 								</object>
@@ -3345,7 +3345,7 @@
 								<border>5</border>
 								<object class="wxBitmapButton" name="IDC_DELETE">
 									<style>wxBU_AUTODRAW</style>
-									<tooltip>Delete</tooltip>
+									<tooltip>Eliminar</tooltip>
 									<bitmap>icons/32x32/computer_delete.png</bitmap>
 									<default>0</default>
 								</object>
@@ -3358,7 +3358,7 @@
 						<border>5</border>
 						<object class="wxBitmapButton" name="wxID_CANCEL">
 							<style>wxBU_AUTODRAW</style>
-							<tooltip>Quit</tooltip>
+							<tooltip>Salir</tooltip>
 							<bitmap>icons/32x32/door_in.png</bitmap>
 							<default>0</default>
 						</object>
@@ -3370,7 +3370,7 @@
 
 	<object class="wxDialog" name="ShaderManagerDlg">
 		<style>wxDEFAULT_DIALOG_STYLE|wxSTAY_ON_TOP</style>
-		<title>PCem Shader Manager</title>
+		<title>PCem Administrador de Shader</title>
 		<centered>1</centered>
 		<object class="wxPanel" name="ROOT_PANEL">
 			<object class="wxBoxSizer">
@@ -3397,7 +3397,7 @@
 									<flag>wxALL</flag>
 									<border>0</border>
 									<object class="wxButton" name="IDC_ADD">
-										<label>Add</label>
+										<label>Agregar</label>
 									</object>
 								</object>
 	
@@ -3405,7 +3405,7 @@
 									<flag>wxALL</flag>
 									<border>0</border>
 									<object class="wxButton" name="IDC_REMOVE">
-										<label>Remove</label>
+										<label>Remover</label>
 									</object>
 								</object>
 																
@@ -3418,7 +3418,7 @@
 									<flag>wxALL</flag>
 									<border>0</border>
 									<object class="wxButton" name="IDC_CONFIG">
-										<label>Configure...</label>
+										<label>Configurar...</label>
 									</object>
 								</object>
 								
@@ -3426,7 +3426,7 @@
 									<flag>wxALL</flag>
 									<border>0</border>
 									<object class="wxButton" name="IDC_MOVE_UP">
-										<label>Move up</label>
+										<label>Mover arriba</label>
 									</object>
 								</object>
 								
@@ -3434,7 +3434,7 @@
 									<flag>wxALL</flag>
 									<border>0</border>
 									<object class="wxButton" name="IDC_MOVE_DOWN">
-										<label>Move down</label>
+										<label>Mover abajo</label>
 									</object>
 								</object>
 								
@@ -3447,14 +3447,14 @@
 									<flag>wxALL</flag>
 									<border>0</border>
 									<object class="wxButton" name="IDC_APPLY">
-										<label>Apply</label>
+										<label>Aplicar</label>
 									</object>
 								</object>
 								<object class="sizeritem">
 									<flag>wxALL</flag>
 									<border>0</border>
 									<object class="wxButton" name="wxID_OK">
-										<label>OK</label>
+										<label>Aceptar</label>
 										<default>1</default>
 									</object>
 								</object>
@@ -3462,7 +3462,7 @@
 									<flag>wxALL</flag>
 									<border>0</border>
 									<object class="wxButton" name="wxID_CANCEL">
-										<label>Cancel</label>
+										<label>Cancelar</label>
 									</object>
 								</object>
 							</object>
@@ -3523,7 +3523,7 @@
 							<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
 							<border>5</border>
 							<object class="wxButton" name="wxID_OK">
-								<label>_OK</label>
+								<label>_Aceptar</label>
 								<default>1</default>
 							</object>
 						</object>
@@ -3531,7 +3531,7 @@
 							<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
 							<border>5</border>
 							<object class="wxButton" name="wxID_CANCEL">
-								<label>_Cancel</label>
+								<label>_Cancelar</label>
 							</object>
 						</object>
 					</object>
@@ -3542,7 +3542,7 @@
 	
 	<object class="wxDialog" name="CustomResolutionDlg">
 		<style>wxDEFAULT_DIALOG_STYLE|wxSTAY_ON_TOP</style>
-		<title>Custom resolution</title>
+		<title>Resolución Personalizada</title>
 		<centered>1</centered>
 		<object class="wxPanel" name="ROOT_PANEL">
 			<object class="wxBoxSizer">
@@ -3603,7 +3603,7 @@
 							<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
 							<border>5</border>
 							<object class="wxButton" name="wxID_OK">
-								<label>&amp;OK</label>
+								<label>&amp;Aceptar</label>
 								<default>1</default>
 							</object>
 						</object>
@@ -3611,7 +3611,7 @@
 							<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
 							<border>5</border>
 							<object class="wxButton" name="wxID_CANCEL">
-								<label>&amp;Cancel</label>
+								<label>&amp;Cancelar</label>
 							</object>
 						</object>
 					</object>
@@ -3632,7 +3632,7 @@
 					<flag>wxALL</flag>
 					<border>5</border>
 					<object class="wxStaticText">
-						<label>PCem v14\nhttps://pcem-emulator.co.uk/\n\nThis program is licensed under the GNU General Public License version 2.\nSee COPYING for more details.\n\nToolbar-icons made by Roundicons (https://roundicons.com/) from www.flaticon.com\nOther icons made by FatCow (http://www.fatcow.com/free-icons/)</label>
+						<label>PCem v14\nhttps://pcem-emulator.co.uk/\n\nEste programa está licenciado bajo la licencia GNU General Public version 2.\nLeer COPYING para más detalles.\n\nIconos de barra de tareas por Roundicons (https://roundicons.com/) from www.flaticon.com\nOtros iconos hechos por FatCow (http://www.fatcow.com/free-icons/)</label>
 						<wrap>-1</wrap>
 					</object>
 				</object>
@@ -3649,7 +3649,7 @@
 					<flag>wxALL</flag>
 					<border>5</border>
 					<object class="wxButton" name="wxID_OK">
-						<label>_OK</label>
+						<label>_Aceptar</label>
 						<default>1</default>
 					</object>
 				</object>
@@ -3660,7 +3660,7 @@
 	<object class="wxDialog" name="HostConfig">
 		<style>wxDEFAULT_DIALOG_STYLE|wxSTAY_ON_TOP</style>
 		<size>499,175</size>
-		<title>Host Configuration</title>
+		<title>Configuración del Host</title>
 		<centered>1</centered>
 		<object class="wxBoxSizer">
 			<orient>wxVERTICAL</orient>
@@ -3700,7 +3700,7 @@
 												<flag>wxALL</flag>
 												<border>5</border>
 												<object class="wxStaticText" name="m_staticText72">
-													<label>Network type :</label>
+													<label>Tipo de red :</label>
 													<wrap>-1</wrap>
 												</object>
 											</object>
@@ -3720,7 +3720,7 @@
 												<flag>wxALL</flag>
 												<border>5</border>
 												<object class="wxStaticText" name="m_staticText73">
-													<label>Network device :</label>
+													<label>Dispositivo de Red:</label>
 													<wrap>-1</wrap>
 												</object>
 											</object>
@@ -3761,14 +3761,14 @@
 											<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
 											<border>5</border>
 											<object class="wxButton" name="wxID_OK">
-												<label>&amp;OK</label>
+												<label>&amp;Aceptar</label>
 											</object>
 										</object>
 										<object class="button">
 											<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
 											<border>5</border>
 											<object class="wxButton" name="wxID_CANCEL">
-												<label>&amp;Cancel</label>
+												<label>&amp;Cancelar</label>
 											</object>
 										</object>
 									</object>

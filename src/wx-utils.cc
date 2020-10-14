@@ -27,7 +27,7 @@ extern "C"
 int confirm()
 {
         if (emulation_state != EMULATION_STOPPED) {
-                return wx_messagebox(NULL, "This will reset PCem!\nOkay to continue?", "PCem", WX_MB_OKCANCEL) == WX_IDOK;
+                return wx_messagebox(NULL, wxString::FromUTF8("¡Esto reiniciará PCem!\n¿Desea proceder?"), "PCem", WX_MB_OKCANCEL) == WX_IDOK;
         }
         return 1;
 }

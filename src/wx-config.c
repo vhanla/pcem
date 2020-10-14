@@ -1656,12 +1656,12 @@ static int hdnew_dlgproc(void* hdlg, int message, INT_PARAM wParam, LONG_PARAM l
                         f = fopen64(hd_new_name, "wb");
                         if (!f)
                         {
-                                wx_messagebox(hdlg, "Can't open file for write", "PCem error", WX_MB_OK);
+                                wx_messagebox(hdlg, wxString::FromUTF8("No se pudo abrir el archivo para escritura"), "PCem error", WX_MB_OK);
                                 return TRUE;
                         }
-                        wx_progressdialog(hdlg, "PCem", "Creating drive, please wait...", create_drive, f, hd_new_cyl * hd_new_hpc * hd_new_spt, &create_drive_pos);
+                        wx_progressdialog(hdlg, "PCem", wxString::FromUTF8("Creando unidad, por favor espere..."), create_drive, f, hd_new_cyl * hd_new_hpc * hd_new_spt, &create_drive_pos);
 
-                        wx_messagebox(hdlg, "Drive created, remember to partition and format the new drive.", "PCem", WX_MB_OK);
+                        wx_messagebox(hdlg, wxString::FromUTF8("Unidad creada, recuerda crear particiones y formatear la nueva unidad."), "PCem", WX_MB_OK);
 
                         wx_enddialog(hdlg, 1);
                         return TRUE;

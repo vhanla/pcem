@@ -130,8 +130,8 @@ void Frame::OnStopEmulationEvent(wxCommandEvent& event)
                 {
                         wxDialog dlg;
                         wxXmlResource::Get()->LoadDialog(&dlg, this, "ConfirmRememberDlg");
-                        dlg.FindWindow("IDC_CONFIRM_LABEL")->SetLabel("Stop emulation?");
-                        dlg.FindWindow("IDC_CONFIRM_REMEMBER")->SetLabel("Do not ask again");
+                        dlg.FindWindow("IDC_CONFIRM_LABEL")->SetLabel(wxString::FromUTF8("¿Detener la emulación?"));
+                        dlg.FindWindow("IDC_CONFIRM_REMEMBER")->SetLabel("No preguntar de nuevo");
                         dlg.Fit();
                         ret = dlg.ShowModal();
                         if (ret == wxID_OK)
