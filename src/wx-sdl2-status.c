@@ -37,11 +37,11 @@ drive_info_t* get_machine_info(char* s, int* num_drive_info) {
                         model_getname(),
                         models[model].cpu[cpu_manufacturer].cpus[cpu].name);
         if (emulation_state == EMULATION_RUNNING)
-                sprintf(s+strlen(s), "\nEmulation speed: %d%%", fps);
+                sprintf(s+strlen(s), "\nVelocidad de Emulacion: %d%%", fps);
         else if (emulation_state == EMULATION_PAUSED)
-                strcat(s, "\nEmulation is paused.");
+                strcat(s, "\nLa emulacion esta en pausa.");
         else
-                strcat(s, "\nEmulation is not running.");
+                strcat(s, "\nLa emulacion no esta corriendo.");
 
         for (i = 0; i < 2; ++i)
         {
@@ -119,8 +119,8 @@ int get_status(char* machine, char* device)
         uint64_t status_diff = new_time - status_time;
         status_time = new_time;
         sprintf(machine,
-                "CPU speed : %f MIPS\n"
-                "FPU speed : %f MFLOPS\n\n"
+                "Velocidad de la CPU : %f MIPS\n"
+                "Velocidad de la FPU : %f MFLOPS\n\n"
 
         /*                        "Cache misses (read) : %i/sec\n"
                 "Cache misses (write) : %i/sec\n\n"*/

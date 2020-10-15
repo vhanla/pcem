@@ -43,7 +43,7 @@
 				<checkable>1</checkable>
 			</object>
 			<object class="wxMenuItem" name="IDM_MACHINE_MOUNT_PATHS">
-				<label>Montar ubicaciones</label>
+				<label>Ubicaciones de Montaje</label>
 				<checkable>1</checkable>
 			</object>
 			<object class="wxMenuItem" name="IDM_SHOW_STATUS">
@@ -84,7 +84,7 @@
 				<label>_Reinicio Completo</label>
 			</object>
 			<object class="wxMenuItem" name="IDM_FILE_RESET_CAD">
-				<label>_Ctrl+Alt+Supr\tCtrl+Alt+R</label>
+				<label>_Ctrl+Alt+Supr</label>
 			</object>
 			<object class="separator"/>
 			<object class="wxMenuItem" name="IDM_FILE_EXIT">
@@ -151,15 +151,15 @@
 			<object class="wxMenu">
 				<label>Resolución</label>
 				<object class="wxMenuItem" name="IDM_VID_RESOLUTION[0]">
-					<label>Original</label>
+					<label>Tamaño original</label>
 					<radio>1</radio>
 				</object>
 				<object class="wxMenuItem" name="IDM_VID_RESOLUTION[1]">
-					<label>Redimensionable</label>
+					<label>Ventana redimensionable</label>
 					<radio>1</radio>
 				</object>
 				<object class="wxMenuItem" name="IDM_VID_RESOLUTION[2]">
-					<label>Personalizado</label>
+					<label>Tamaño personalizado</label>
 					<radio>1</radio>
 				</object>
 				<object class="separator"/>

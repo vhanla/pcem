@@ -582,7 +582,7 @@ void runpc()
         if (win_title_update)
         {
                 win_title_update=0;
-                sprintf(s, "PCem v16 - %i%% - %s - %s - %s", fps, model_getname(), models[model].cpu[cpu_manufacturer].cpus[cpu].name, (!mousecapture) ? "Click to capture mouse" : ((mouse_get_type(mouse_type) & MOUSE_TYPE_3BUTTON) ? "Press CTRL-END to release mouse" : "Press CTRL-END or middle button to release mouse"));
+                sprintf(s, "PCem v16 - %i%% - %s - %s - %s", fps, model_getname(), models[model].cpu[cpu_manufacturer].cpus[cpu].name, (!mousecapture) ? "Clic para capturar mouse" : ((mouse_get_type(mouse_type) & MOUSE_TYPE_3BUTTON) ? "Presione CTRL-END para liberar el mouse" : "Presione CTRL-END o el botón del medio para liberar el mouse"));
                 set_window_title(s);
         }
         done++;

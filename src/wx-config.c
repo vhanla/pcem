@@ -1622,7 +1622,7 @@ static int hdnew_dlgproc(void* hdlg, int message, INT_PARAM wParam, LONG_PARAM l
                         wx_sendmessage(h, WX_WM_GETTEXT, 511, (LONG_PARAM)hd_new_name);
                         if (!hd_new_name[0])
                         {
-                                wx_messagebox(hdlg,"Please enter a valid filename","PCem error",WX_MB_OK);
+                                wx_messagebox(hdlg,"Por favor ingrese un nombre de archivo valido","PCem error",WX_MB_OK);
                                 return TRUE;
                         }
                         h = wx_getdlgitem(hdlg, WX_ID("IDC_EDIT1"));
@@ -1637,18 +1637,18 @@ static int hdnew_dlgproc(void* hdlg, int message, INT_PARAM wParam, LONG_PARAM l
 
                         if (hd_new_spt > 63)
                         {
-                                wx_messagebox(hdlg, "Drive has too many sectors (maximum is 63)", "PCem error", WX_MB_OK);
+                                wx_messagebox(hdlg, "La unidad tiene muchos sectores (maximo es 63)", "PCem error", WX_MB_OK);
                                 return TRUE;
                         }
                         if (hd_new_hpc > 16)
                         {
-                                wx_messagebox(hdlg, "Drive has too many heads (maximum is 16)", "PCem error", WX_MB_OK);
+                                wx_messagebox(hdlg, "La unidad tiene muchos cabezales (maximo es 16)", "PCem error", WX_MB_OK);
                                 return TRUE;
                         }
                         if (hd_new_cyl > MAX_CYLINDERS)
                         {
                                 char s[256];
-                                sprintf(s, "Drive has too many cylinders (maximum is %i)", MAX_CYLINDERS);
+                                sprintf(s, "La unidad tien muchos cilindros (maximo es %i)", MAX_CYLINDERS);
                                 wx_messagebox(hdlg, s, "PCem error", WX_MB_OK);
                                 return TRUE;
                         }
@@ -1656,12 +1656,12 @@ static int hdnew_dlgproc(void* hdlg, int message, INT_PARAM wParam, LONG_PARAM l
                         f = fopen64(hd_new_name, "wb");
                         if (!f)
                         {
-                                wx_messagebox(hdlg, wxString::FromUTF8("No se pudo abrir el archivo para escritura"), "PCem error", WX_MB_OK);
+                                wx_messagebox(hdlg, "No se pudo abrir el archivo para escritura", "PCem error", WX_MB_OK);
                                 return TRUE;
                         }
-                        wx_progressdialog(hdlg, "PCem", wxString::FromUTF8("Creando unidad, por favor espere..."), create_drive, f, hd_new_cyl * hd_new_hpc * hd_new_spt, &create_drive_pos);
+                        wx_progressdialog(hdlg, "PCem", "Creando unidad, por favor espere...", create_drive, f, hd_new_cyl * hd_new_hpc * hd_new_spt, &create_drive_pos);
 
-                        wx_messagebox(hdlg, wxString::FromUTF8("Unidad creada, recuerda crear particiones y formatear la nueva unidad."), "PCem", WX_MB_OK);
+                        wx_messagebox(hdlg, "Unidad creada, recuerda crear particiones y formatear la nueva unidad.", "PCem", WX_MB_OK);
 
                         wx_enddialog(hdlg, 1);
                         return TRUE;
@@ -1669,7 +1669,7 @@ static int hdnew_dlgproc(void* hdlg, int message, INT_PARAM wParam, LONG_PARAM l
                         wx_enddialog(hdlg, 0);
                         return TRUE;
                 } else if (ID_IS("IDC_CFILE")) {
-                        if (!getsfile(hdlg, "Hard disc image (*.img)|*.img|All files (*.*)|*.*", "", NULL, "img"))
+                        if (!getsfile(hdlg, "Imagend de Disco Duro (*.img)|*.img|Todos los archivos (*.*)|*.*", "", NULL, "img"))
                         {
                                 h = wx_getdlgitem(hdlg, WX_ID("IDC_EDITC"));
                                 wx_sendmessage(h, WX_WM_SETTEXT, 0, (LONG_PARAM) openfilestring);
@@ -1803,18 +1803,18 @@ static int hdsize_dlgproc(void* hdlg, int message, INT_PARAM wParam, LONG_PARAM 
 
                         if (hd_new_spt > 63)
                         {
-                                wx_messagebox(hdlg,"Drive has too many sectors (maximum is 63)","PCem error",WX_MB_OK);
+                                wx_messagebox(hdlg,"La unidad tiene muchos sectores (maximo es 63)","PCem error",WX_MB_OK);
                                 return TRUE;
                         }
                         if (hd_new_hpc > 16)
                         {
-                                wx_messagebox(hdlg,"Drive has too many heads (maximum is 16)","PCem error",WX_MB_OK);
+                                wx_messagebox(hdlg,"La unidad tiene muchos cabezales (maximo es 16)","PCem error",WX_MB_OK);
                                 return TRUE;
                         }
                         if (hd_new_cyl > MAX_CYLINDERS)
                         {
                                 char s[256];
-                                sprintf(s, "Drive has too many cylinders (maximum is %i)", MAX_CYLINDERS);
+                                sprintf(s, "La unidad tiene muchos cilindros (maximo es %i)", MAX_CYLINDERS);
                                 wx_messagebox(hdlg,s,"PCem error",WX_MB_OK);
                                 return TRUE;
                         }
@@ -1962,13 +1962,13 @@ static int hd_new(void *hdlg, int drive)
 
 static int hd_file(void *hdlg, int drive)
 {
-        if (!getfile(hdlg, "Hard disc image (*.img)|*.img|All files (*.*)|*.*", ""))
+        if (!getfile(hdlg, "Imagen de Disco Duro (*.img)|*.img|Todos los archivos (*.*)|*.*", ""))
         {
                 off64_t sz;
                 FILE *f = fopen64(openfilestring, "rb");
                 if (!f)
                 {
-                        wx_messagebox(hdlg,"Can't open file for read","PCem error",WX_MB_OK);
+                        wx_messagebox(hdlg,"No se pudo abrir el archivo para lectura","PCem error",WX_MB_OK);
                         return TRUE;
                 }
                 fseeko64(f, -1, SEEK_END);

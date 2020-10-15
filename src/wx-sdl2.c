@@ -588,8 +588,8 @@ int wx_start(void* hwnd)
         if (c == ROM_MAX)
         {
                 wx_messagebox(hwnd,
-                                "No ROMs present!\nYou must have at least one romset to use PCem.",
-                                "PCem fatal error", WX_MB_OK);
+                                "No se encontraron ROMs!\nPara usar PCem debe tener al menos un romset.",
+                                "PCem error fatal", WX_MB_OK);
                 return 0;
         }
 
@@ -630,7 +630,7 @@ int start_emulation(void* params)
         {
                 if (romset != -1)
                         wx_messagebox(ghwnd,
-                                        "Configured romset not available.\nDefaulting to available romset.",
+                                        "Romset configurado no disponible.\nAsignando a un romset disponible.",
                                         "PCem error", WX_MB_OK);
                 for (c = 0; c < ROM_MAX; c++)
                 {
@@ -647,7 +647,7 @@ int start_emulation(void* params)
         {
                 if (romset != -1)
                         wx_messagebox(ghwnd,
-                                        "Configured video BIOS not available.\nDefaulting to available romset.",
+                                        "BIOS de video configurado no disponible.\nAsignando a un romset disponible.",
                                         "PCem error", WX_MB_OK);
                 for (c = GFX_MAX - 1; c >= 0; c--)
                 {
@@ -847,7 +847,7 @@ int wx_handle_command(void* hwnd, int wParam, int checked)
         else if (ID_IS("IDM_DISC_A"))
         {
                 if (!getfile(hwnd,
-                                "Disc image (*.img;*.ima;*.fdi)|*.img;*.ima;*.fdi|All files (*.*)|*.*",
+                                "Imagen de Disco (*.img;*.ima;*.fdi)|*.img;*.ima;*.fdi|Todos los archivos (*.*)|*.*",
                                 discfns[0]))
                 {
                         disc_close(0);
@@ -858,7 +858,7 @@ int wx_handle_command(void* hwnd, int wParam, int checked)
         else if (ID_IS("IDM_DISC_B"))
         {
                 if (!getfile(hwnd,
-                                "Disc image (*.img;*.ima;*.fdi)|*.img;*.ima;*.fdi|All files (*.*)|*.*",
+                                "Imagen de Disco (*.img;*.ima;*.fdi)|*.img;*.ima;*.fdi|Todos los archivos (*.*)|*.*",
                                 discfns[1]))
                 {
                         disc_close(1);
@@ -891,7 +891,7 @@ int wx_handle_command(void* hwnd, int wParam, int checked)
                 char zip_fn[256] = "";
                 
                 if (!getfile(hwnd,
-                                "Disc image (*.img)|*.img|All files (*.*)|*.*",
+                                "Imagen de Disco (*.img)|*.img|Todos los archivos (*.*)|*.*",
                                 zip_fn))
                 {
                         zip_load(openfilestring);
@@ -904,7 +904,7 @@ int wx_handle_command(void* hwnd, int wParam, int checked)
         else if (ID_IS("IDM_CASSETTE_LOAD"))
         {
                 if (!getfile(hwnd,
-                                "Tape image (*.pzxi;*.pzx)|*.pzxi;*.pzx|All files (*.*)|*.*",
+                                "Imagen de CintaTape (*.pzxi;*.pzx)|*.pzxi;*.pzx|Todos los archivos (*.*)|*.*",
                                 cassettefn))
                 {
                         cassette_eject();
@@ -981,7 +981,7 @@ int wx_handle_command(void* hwnd, int wParam, int checked)
                 {
                         video_fullscreen_first = 0;
                         wx_messagebox(hwnd,
-                                        "Use CTRL + ALT + PAGE DOWN to return to windowed mode",
+                                        "Use CTRL + ALT + PAGE DOWN para retornar al modo ventana",
                                         "PCem", WX_MB_OK);
                 }
                 video_fullscreen = !video_fullscreen;
@@ -1117,7 +1117,7 @@ int wx_handle_command(void* hwnd, int wParam, int checked)
         else if (ID_IS("IDM_CDROM_IMAGE") || ID_IS("IDM_CDROM_IMAGE_LOAD"))
         {
                 if (!getfile(hwnd,
-                                "CD-ROM image (*.iso;*.cue)|*.iso;*.cue|All files (*.*)|*.*",
+                                "Imagen de CD-ROM (*.iso;*.cue)|*.iso;*.cue|Todos los archivos (*.*)|*.*",
                                 image_path))
                 {
                         old_cdrom_drive = cdrom_drive;
